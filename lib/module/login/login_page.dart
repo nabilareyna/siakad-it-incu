@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget {
                           hintText: 'Masukkan Password'),
                     ),
                   ),
-                  SizedBox(height: 40),
+                  SizedBox(height: 65),
                   GestureDetector(
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => NavBar()));

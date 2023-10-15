@@ -10,11 +10,7 @@ class DashboardPage extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
             "Salam,",
-            style: TextStyle(
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.bold,
-                fontSize: 28,
-                letterSpacing: 2.0),
+            style: TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 28, letterSpacing: 2.0),
           ),
           Text(
             "Ahmad Fauzan Adhima",
@@ -30,12 +26,7 @@ class DashboardPage extends StatelessWidget {
               margin: EdgeInsets.all(24),
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 5,
-                        offset: Offset(0, 5))
-                  ],
+                  boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 5, offset: Offset(0, 5))],
                   color: Colors.white,
                   border: Border.all(color: Colors.white),
                   borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -100,37 +91,24 @@ class DashboardPage extends StatelessWidget {
           ]),
           Text(
             "Jadwal Kuliahmu Hari Ini",
-            style: TextStyle(
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.bold,
-                fontSize: 28,
-                letterSpacing: 2.2),
+            style: TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 28, letterSpacing: 2.2),
           ),
           Column(
             children: [
               Container(
                 margin: EdgeInsets.all(24),
                 padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.black26,
-                          blurRadius: 5,
-                          offset: Offset(0, 5)),
-                    ],
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.all(Radius.circular(30))),
-                child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                decoration: BoxDecoration(boxShadow: [
+                  BoxShadow(color: Colors.black26, blurRadius: 5, offset: Offset(0, 5)),
+                ], color: Colors.white, border: Border.all(color: Colors.white), borderRadius: BorderRadius.all(Radius.circular(30))),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       children: [
                         Text(
                           "Senin",
-                          style: TextStyle(
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                          style: TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 16),
                         )
                       ],
                     ),
