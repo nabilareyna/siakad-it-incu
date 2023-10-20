@@ -5,6 +5,7 @@ class Styles {
   static Color secondaryBlue = const Color(0XFFF0081E7);
   static Color redColor = const Color(0XFFFDA2B2B);
   static Color bgColor = const Color(0XFFFE6E6E6);
+  static Color greyColor = const Color(0XFFFD9D9D9);
 
   static TextStyle primaryTextStyle = const TextStyle(color: Colors.black, fontFamily: 'Inter', fontWeight: FontWeight.w600, letterSpacing: 2, fontSize: 18);
   static TextStyle titleHeading = const TextStyle(color: Colors.black, fontFamily: 'Inter', fontWeight: FontWeight.bold, letterSpacing: 2, fontSize: 24);

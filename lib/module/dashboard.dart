@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:siakad/utils/app_themes.dart';
+import 'package:siakad/utils/const.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
@@ -6,140 +8,246 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styles.bgColor,
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(
-            "Salam,",
-            style: TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 28, letterSpacing: 2.0),
-          ),
-          Text(
-            "Ahmad Fauzan Adhima",
-            style: TextStyle(
-              fontFamily: 'Inter',
-              fontWeight: FontWeight.bold,
-              fontSize: 28,
-              letterSpacing: 2.0,
-            ),
-          ),
-          Column(children: [
-            Container(
-              margin: EdgeInsets.all(24),
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                  boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 5, offset: Offset(0, 5))],
-                  color: Colors.white,
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.all(Radius.circular(30))),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        "NIM: 230605110081",
-                        style: TextStyle(fontFamily: 'Inter'),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Text(
-                        "Status Studi: Mahasiswa Aktif",
-                        style: TextStyle(fontFamily: 'Inter'),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Text(
-                        "Jurusan: S1 Teknik Informatika",
-                        style: TextStyle(fontFamily: 'Inter'),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Text(
-                        "Akreditasi: B",
-                        style: TextStyle(fontFamily: 'Inter'),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Text(
-                        "Dosen Wali: Mukidi",
-                        style: TextStyle(fontFamily: 'Inter'),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Text(
-                        "Semester: Satu(1)",
-                        style: TextStyle(fontFamily: 'Inter'),
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ]),
-          Text(
-            "Jadwal Kuliahmu Hari Ini",
-            style: TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 28, letterSpacing: 2.2),
-          ),
-          Column(
-            children: [
-              Container(
-                margin: EdgeInsets.all(24),
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(boxShadow: [
-                  BoxShadow(color: Colors.black26, blurRadius: 5, offset: Offset(0, 5)),
-                ], color: Colors.white, border: Border.all(color: Colors.white), borderRadius: BorderRadius.all(Radius.circular(30))),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Senin",
-                          style: TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 16),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Mata Kuliah                                                           Jam                                                          Kelas",
-                          style: TextStyle(fontFamily: 'Inter', fontSize: 9),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Filsafat Ilmu                                 09.00|11.00                                 B.317",
-                          style: TextStyle(fontFamily: 'Inter', fontSize: 12),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Pancasila                                     12.30|14.00                                 B.307",
-                          style: TextStyle(fontFamily: 'Inter', fontSize: 12),
-                        )
-                      ],
-                    )
-                  ],
+        child: Column(children: [
+          SizedBox(height: 10),
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(Const.parentMargin(x: 1.5)),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Salam,",
+                  style: Styles.titleHeading,
                 ),
-              )
-            ],
+                Text("Ahmad Fauzan Adhima", style: Styles.titleHeading),
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: Const.parentMargin(x: 1.5)),
+            width: double.infinity,
+            child: Column(
+              children: [
+                Container(
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                  color: Colors.white, border: Border.all(color: Colors.white), borderRadius: BorderRadius.all(Radius.circular(30))),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "NIM: ",
+                                        style: Styles.heading3,
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(height: 5),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Status Studi: ",
+                                        style: Styles.heading3,
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(height: 5),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Jurusan: ",
+                                        style: Styles.heading3,
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(height: 5),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Akreditasi: ",
+                                        style: Styles.heading3,
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(height: 5),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Dosen Wali: ",
+                                        style: Styles.heading3,
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(height: 5),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Semester: ",
+                                        style: Styles.heading3,
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  "230605110081",
+                                  style: Styles.heading3,
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 5),
+                            Row(
+                              children: [
+                                Text(
+                                  "Mahasiswa Aktif",
+                                  style: Styles.heading3,
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 5),
+                            Row(
+                              children: [
+                                Text(
+                                  "Teknik Informatika",
+                                  style: Styles.heading3,
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 5),
+                            Row(
+                              children: [
+                                Text(
+                                  "B",
+                                  style: Styles.heading3,
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 5),
+                            Row(
+                              children: [
+                                Text(
+                                  "Mr. Mukidi",
+                                  style: Styles.heading3,
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 5),
+                            Row(
+                              children: [
+                                Text(
+                                  "1 (Satu)",
+                                  style: Styles.heading3,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            padding: EdgeInsets.only(
+                left: Const.siblingMargin(x: 4), right: Const.siblingMargin(x: 4), bottom: Const.siblingMargin(x: 6), top: Const.siblingMargin(x: 4)),
+            decoration: BoxDecoration(
+                boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 5, offset: Offset(0, 5))],
+                color: Colors.white,
+                border: Border.all(color: Colors.white),
+                borderRadius: BorderRadius.all(Radius.circular(30))),
+          ),
+          SizedBox(height: 20),
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(Const.parentMargin(x: 1.5)),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Jadwal Kuliahmu",
+                  style: Styles.titleHeading,
+                ),
+                Text(
+                  'Hari Ini',
+                  style: Styles.titleHeading,
+                )
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: Const.parentMargin(x: 1.5)),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(25)),
+                boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 5, offset: Offset(0, 5))]),
+            width: double.infinity,
+            child: Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.only(
+                      left: Const.siblingMargin(x: 4), right: Const.siblingMargin(x: 4), bottom: Const.siblingMargin(x: 6), top: Const.siblingMargin(x: 4)),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Kamis', style: Styles.primaryTextStyle),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Subject', style: Styles.subHeading),
+                          Text('Time', style: Styles.subHeading),
+                          Text('Room', style: Styles.subHeading),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Filsafat Ilmu', style: Styles.heading3),
+                          Text('09.00 | 11.00', style: Styles.heading3),
+                          Text('D.222', style: Styles.heading3),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Pancasila', style: Styles.heading3),
+                          Text('12.20 | 14.00', style: Styles.heading3),
+                          Text('B.305', style: Styles.heading3),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ]),
       ),

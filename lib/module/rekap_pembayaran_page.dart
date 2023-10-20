@@ -29,7 +29,7 @@ class RekapPembayaranPage extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 0, 2, 0),
                     child: CircleAvatar(
                       backgroundImage: AssetImage(
-                        'assets/mimpi.jpg',
+                        'images/profile.jpg',
                       ),
                       radius: 50,
                     ),
@@ -44,7 +44,7 @@ class RekapPembayaranPage extends StatelessWidget {
                           style: Styles.rekapText,
                         ),
                         Text(
-                          '12304387543',
+                          '230605110081',
                           style: Styles.heading3,
                         )
                       ],
